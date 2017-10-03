@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Even or Odd</title>
+</head>
+
+<body>
+    <script>
+        var number = Number(prompt("Enter a number:"));
+        if (number <= 0) {
+            document.write("Enter a number greater than 0.</br>");
+        } else if (number % 2 == 0) {
+            document.write("The number " + number + " is Even.</br>");
+        } else {
+            document.write("The number " + number + " is Odd.</br>");
+        }
+
+    </script>
+    <input type="button" value="Find Again" onClick="window.location.reload()">
+    <input type="button" value="Back" onClick="location.href='index.html'">
+</body>
+
+</html>

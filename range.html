@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Range</title>
+</head>
+
+<body>
+    <script>
+        var number = Number(prompt("Enter a number:"));
+        if (number >= 0 && number <= 999) {
+            document.write("The Odd numbers are: ");
+            for (i = 1; i <= number; i++) {
+                if (i % 2 == 1)
+                    document.write(i + ", ");
+            }
+            document.write("</br> </br>");
+            document.write("The Even numbers are: ");
+            for (i = 1; i <= number; i++) {
+                if (i % 2 == 0)
+                    document.write(i + ", ");
+            }
+            document.write(".</br></br>");
+        } else {
+            document.write("Enter a number greater than 0 and less than 1000.</br>");
+        }
+
+    </script>
+    <input type="button" value="Find Again" onClick="window.location.reload()">
+    <input type="button" value="Back" onClick="location.href='index.html'">
+</body>
+
+</html>
